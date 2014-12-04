@@ -5,7 +5,18 @@
     "FantasyShao <me@fantasy.codes>"
   ],
   "repository": "git@github.com:FantasyMedia/toolbox.git",
-  "dependencies": {
-
+  "browserify": {
+    "transform": [
+      "coffeeify"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "coffeeify": "~1.0.0",
+    "browserify": "~6.3.3",
+    "require-dir": "~0.1.0",
+    "vinyl-source-stream": "~1.0.0",
+    "watchify": "~2.1.1"
   }
 }
