@@ -1,0 +1,11 @@
+{
+  "name": "toolbox",
+  "version": "0.0.0",
+  "author": [
+    "FantasyShao <me@fantasy.codes>"
+  ],
+  "repository": "git@github.com:FantasyMedia/toolbox.git",
+  "dependencies": {
+
+  }
+}
