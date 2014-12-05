@@ -9,9 +9,10 @@
 */
 
 var gulp = require('gulp');
+var config = require('../config');
 
 gulp.task('default', ['watch']);
 
-gulp.task('watch', ['browserify'], function () {
-
+gulp.task('watch', ['browserify', 'sass'], function () {
+  gulp.watch(config.sass.src, ['sass']);
 });

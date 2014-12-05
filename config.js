@@ -15,7 +15,7 @@ module.exports = {
 
   sass: {
     src: src + '/sass/*.sass',
-    dest: dest,
+    dest: dest + '/css',
     settings: {
       sourceComments: 'map',
       noCached: true
@@ -27,7 +27,7 @@ module.exports = {
     extensions: ['.coffee'],
     bundleConfigs: [{
       entries: src + '/coffee/test.coffee',
-      dest: dest,
+      dest: dest + '/js',
       outputName: 'test.js'
     }]
   }
