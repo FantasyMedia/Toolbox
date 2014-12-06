@@ -14,11 +14,11 @@ var src  = './src';
 module.exports = {
 
   sass: {
-    src: src + '/sass/*.sass',
+    src: src + '/sass/site.sass',
     dest: dest + '/css',
     settings: {
-      sourceComments: 'map',
-      noCached: true
+      style: 'compressed',
+      noCache: true
     }
   },
 
@@ -26,9 +26,9 @@ module.exports = {
     debug: true,
     extensions: ['.coffee'],
     bundleConfigs: [{
-      entries: src + '/coffee/test.coffee',
+      entries: src + '/coffee/site.coffee',
       dest: dest + '/js',
-      outputName: 'test.js'
+      outputName: 'site.js'
     }]
   }
 

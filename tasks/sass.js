@@ -9,8 +9,8 @@
  */
 
 var gulp = require('gulp');
-var sass = require('gulp-sass');
-var config = require('./config').sass;
+var sass = require('gulp-ruby-sass');
+var config = require('../config').sass;
 
 gulp.task('sass', function () {
 
