@@ -10,5 +10,35 @@
  */
 
 @import 'reset'
+@import 'mixin'
 
 @import 'sidebar'
+
+html
+  font-size: 10px
+
+body
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif
+
+.site-header
+  position: relative
+  padding: 2rem
+  height: 3rem
+  line-height: 3rem
+  h1
+    font-size: 2.8rem
+    margin: 0
+    padding-left: 4rem
+  i.fa-bars
+    font-size: 2rem
+    position: absolute
+    left: 2rem
+    top: 50%
+    margin-top: -1rem
+
+.main
+  @include transition(transform 0.5s ease)
+  &.active
+    @include transform(translate3d(260px, 0, 0))
+
+

@@ -1,0 +1,63 @@
+/*
+ * sidebar.sass
+ *
+ * Copyright 2014 Fantasy Shao
+ *
+ * @description 
+ * @author fantasy
+ * @create 2014-12-06
+ * @update 2014-12-07
+ */
+
+.sidebar
+  top: 0
+  left: 0
+  height: 100%
+  width: 250px
+  position: fixed
+  overflow-y: auto
+  font-size: 1.6rem
+  background-color: #1B1C1D
+  z-index: 10
+  @include transition(transform 0.5s ease)
+  .sidebar-header
+    position: relative
+    padding: 20px
+    img
+      height: 35px
+      float: left
+      margin-right: 10px
+    h2
+      margin: 0
+      color: white
+      height: 35px
+      line-height: 35px
+      font-size: 2.4rem
+    i.fa-close
+      position: absolute
+      right: 20px
+      top: 50%
+      margin-top: -1rem
+      font-size: 2rem
+      color: rgba(255, 255, 255, 0.75)
+
+  ul
+    margin: 0
+    padding: 0
+  li
+    padding: 10px 20px
+    border-top: 1px solid rgba(255, 255, 255, 0.15)
+    &:hover
+      background-color: rgba(255, 255, 255, 0.2)
+    a
+      color: white
+    &.item
+      border-top: none
+      font-size: 1.4rem
+      a
+        color: rgba(255, 255, 255, 0.45)
+        &:hover
+          color: rgba(255, 255, 255, 0.85)
+
+.sidebar.hide
+  @include transform(translate3d(-100%, 0, 0))
