@@ -14,10 +14,12 @@ var src  = './src';
 module.exports = {
 
   sass: {
-    src: src + '/sass/site.sass',
+    src: src + '/sass/*.sass',
     dest: dest + '/css',
     settings: {
       style: 'compressed',
+      sourcemap: true,
+      sourcemapPath: '../../src/sass',
       noCache: true
     }
   },
