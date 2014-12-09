@@ -7,6 +7,20 @@ Tools All In One Box
 
 Toolbox is a website built for developers to use different tools.
 
+## Develop
+
+- Build
+
+```
+npm install
+gulp
+```
+
+- Run locally
+
+```
+npm start
+```
 
 ## License
 

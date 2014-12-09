@@ -5,6 +5,9 @@
     "FantasyShao <me@fantasy.codes>"
   ],
   "repository": "git@github.com:FantasyMedia/toolbox.git",
+  "scripts": {
+    "start": "node app.js"
+  },
   "browserify": {
     "transform": [
       "coffeeify"
@@ -18,6 +21,7 @@
     "require-dir": "~0.1.0",
     "vinyl-source-stream": "~1.0.0",
     "watchify": "~2.1.1",
-    "gulp-ruby-sass": "~0.7.1"
+    "gulp-ruby-sass": "~0.7.1",
+    "express": "~4.10.4"
   }
 }
