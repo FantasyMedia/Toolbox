@@ -6,7 +6,7 @@
  * @description 
  * @author fantasy
  * @create 2014-12-06
- * @update 2014-12-08
+ * @update 2014-12-11
  */
 
 @import 'reset'
@@ -30,16 +30,41 @@ body
 
 .container
   padding: 2rem
+  font-size: 0
+  height: calc(100vh - 15rem)
+
+.panel, .divider
+  display: inline-block
+  font-size: 1.2rem
+  color: #333
+  font-family: consolas, menlo, monaco, monospace
+
+.panel
+  width: 47%
+  height: 100%
+  outline: none
+  border: 1px solid #c0c0c0
+  border-radius: 4px
+  padding: 0.5rem 1rem
+  @include box-sizing(border-box)
+
+.divider
+  width: 6%
 
 .site-header
   position: relative
   padding: 2rem
   height: 3rem
   line-height: 3rem
+  border-bottom: 1px solid rgba(66, 66, 66, 0.35)
+  background-color: rgba(250, 250, 250, 0.9)
   h1
     font-size: 2.8rem
     margin: 0
     padding-left: 4rem
+    small
+      font-size: 2rem
+      color: #999
   i.fa-bars
     font-size: 2rem
     position: absolute
