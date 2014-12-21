@@ -34,13 +34,13 @@ body
   height: calc(100vh - 15rem)
 
 .panel, .divider
-  display: inline-block
+  float: left
   font-size: 1.2rem
   color: #333
   font-family: consolas, menlo, monaco, monospace
 
 .panel
-  width: 47%
+  width: 45%
   height: 100%
   outline: none
   border: 1px solid #c0c0c0
@@ -49,7 +49,8 @@ body
   @include box-sizing(border-box)
 
 .divider
-  width: 6%
+  width: 10%
+  text-align: center
 
 .site-header
   position: relative
@@ -86,3 +87,20 @@ body
     color: #666
   a:hover
     color: rgba(200, 200, 200, .5)
+
+.btn
+  display: inline-block
+  font-size: 1.4rem
+  border: none
+  outline: none
+  color: #ffffff
+  padding: 5px
+  border-radius: 4px
+  &:not(:first-child)
+    margin-top: 10px
+  &.green
+    background-color: #52EDC7
+  &.red
+    background-color: #FF2D55
+  &:hover
+    cursor: pointer
