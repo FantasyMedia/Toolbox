@@ -6,6 +6,7 @@
 # @update 2014-12-21
 
 base64 = require './base64'
+imageBase64 = require './imageBase64'
 
 class Site
   constructor: () ->
@@ -34,6 +35,9 @@ class Site
 
     $('#base64decode').click ->
       base64output.html base64.decode(base64input.html())
+
+    # Image Base64 tool
+    $('#base64imageInput').on 'change', imageBase64.handleFile
 
 $(document).ready ->
   site = new Site()

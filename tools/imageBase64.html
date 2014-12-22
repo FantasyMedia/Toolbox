@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Image Base64 - Tool Box</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../dist/css/site.css" rel="stylesheet"/>
+    <script src="../public/jquery-2.1.1.js"></script>
+    <script src="../dist/js/site.js"></script>
+</head>
+<body>
+<nav class="sidebar hide">
+    <div class="sidebar-header">
+        <img src="../public/logo.png" alt=""/>
+        <h2>Menu</h2>
+        <i class="fa fa-close" id="close"></i>
+    </div>
+    <ul>
+        <li><a href="/toolbox/index.html">Home</a></li>
+        <li><a href="#">Tools</a></li>
+        <li class="item"><a href="/toolbox/tools/base64.html">JSON Base64</a></li>
+        <li class="item"><a href="/toolbox/tools/imageBase64.html">Image Base64</a></li>
+        <li class="item"><a href="/toolbox/tools/editor.html">Markdown Editor</a></li>
+        <li></li>
+        <li class="item"><a href="//github.com/FantasyMedia/Toolbox">Fork on Github</a></li>
+    </ul>
+</nav>
+<main class="main">
+    <header class="site-header">
+        <i class="fa fa-bars" id="open"></i>
+        <h1>Image Base64 <small>Toolbox</small></h1>
+    </header>
+    <section class="container">
+        <input type="file" id="base64imageInput"/>
+        <p class="site-p" id="base64imageInfo"></p>
+        <img src="" alt="" id="base64imageSample"/>
+        <pre class="site-output hidden" id="base64imageOutput"></pre>
+    </section>
+    <footer class="site-footer">
+        <p>ToolBox &copy; Copyright 2014 <a href="//github.com/FantasyMedia">FantasyMedia</a></p>
+    </footer>
+</main>
+</body>
+</html>
