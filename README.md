@@ -7,6 +7,11 @@ Tools All In One Box
 
 Toolbox is a website built for developers to use different tools.
 
+### Tools
+
+- Base64
+- Image Base64
+
 ## Develop
 
 - Build
